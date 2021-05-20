@@ -11,7 +11,7 @@ namespace Domain.Validators
     {
         public readonly ApplicationDbContext context;
 
-        public ValidateCreateClientes(ApplicationDbContext context, IClientes clientes)
+        public ValidateCreateClientes(ApplicationDbContext context)
         {
             this.context = context;
         }

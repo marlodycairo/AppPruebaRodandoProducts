@@ -11,7 +11,6 @@ namespace Infrastructure.Repositories.Repository
     public class ClientesRepo : IClientes
     {
         public readonly ApplicationDbContext context;
-        public string Message = "Error. No se pudo guardar.";
         public List<Clientes> clientes;
 
         public ClientesRepo(ApplicationDbContext context)

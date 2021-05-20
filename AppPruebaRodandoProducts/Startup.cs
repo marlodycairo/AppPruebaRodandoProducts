@@ -1,3 +1,5 @@
+using Domain.RepositoryService.IRepoService;
+using Domain.RepositoryService.RepoService;
 using Infrastructure.Repositories.IRepository;
 using Infrastructure.Repositories.Repository;
 using Microsoft.AspNetCore.Builder;
@@ -35,7 +37,7 @@ namespace AppPruebaRodandoProducts
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AppPruebaRodandoProducts", Version = "v1" });
             });
 
-            services.AddSingleton<IClientes, ClientesRepo>();
+            // services.AddSingleton<IClientesRepoService, ClienteRepoService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
