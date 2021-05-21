@@ -1,3 +1,5 @@
+using AppPruebaRodandoProducts.Api.Application;
+using AppPruebaRodandoProducts.Api.ApplicationService;
 using Domain.RepositoryService.IRepoService;
 using Domain.RepositoryService.RepoService;
 using Infrastructure.Repositories.IRepository;
@@ -37,8 +39,7 @@ namespace AppPruebaRodandoProducts
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AppPruebaRodandoProducts", Version = "v1" });
             });
 
-            //services.AddScoped<IClientes, ClientesRepo>();
-            //services.AddScoped<IClientesRepoService, ClienteRepoService>();
+            services.AddSingleton<IApplicationCliente, ApplicationServiceCliente>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

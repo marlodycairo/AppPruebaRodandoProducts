@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\AppPruebaRodandoProducts.Api.Domain.csproj" />
-    <ProjectReference Include="..\Infrastructure\AppPruebaRodandoProducts.Api.Infrastructure.csproj" />
+    <ProjectReference Include="..\ApplicationService\AppPruebaRodandoProducts.Api.ApplicationService.csproj" />
+    <ProjectReference Include="..\Application\AppPruebaRodandoProducts.Api.Application.csproj" />
   </ItemGroup>
 
 </Project>

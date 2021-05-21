@@ -4,14 +4,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Domain\AppPruebaRodandoProducts.Api.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ApplicationServices\IClienteAplicationService\" />
-    <Folder Include="ApplicationServices\ClienteAplicationService\" />
-    <Folder Include="Aplication\" />
-  </ItemGroup>
-
 </Project>
