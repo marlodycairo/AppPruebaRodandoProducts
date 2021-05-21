@@ -37,7 +37,8 @@ namespace AppPruebaRodandoProducts
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AppPruebaRodandoProducts", Version = "v1" });
             });
 
-            // services.AddSingleton<IClientesRepoService, ClienteRepoService>();
+            //services.AddScoped<IClientes, ClientesRepo>();
+            //services.AddScoped<IClientesRepoService, ClienteRepoService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
